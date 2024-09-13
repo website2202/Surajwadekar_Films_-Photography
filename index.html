@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surajwadekar Films Photography</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-menu ul li {
+            margin-left: 20px;
+        }
+
+        .nav-menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .hero {
+            background-image: url('images/cam.jpg') ;
+          
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content h2 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin: 0 0 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff4500;
+        }
+
+        .about, .portfolio-preview, .services, .contact-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #111;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .service-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .service-item {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .contact-section form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-section input, .contact-section textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .contact-section button {
+            padding: 10px;
+            background-color: #ffc107;
+            border: none;
+            border-radius: 5px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-section h5 {
+            color: #ffc107;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .main-footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #111;
+        }
+
+        .social-media img {
+            width: 24px;
+            margin: 0 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-menu ul li {
+                margin: 10px 0;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonial-carousel {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .testimonial-item {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>Surajwadekar Films And Photography</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="view-more.html">Portfolio</a></li>
+                <!--<li><a href="#">Services</a></li>
+                <li><a href="about.html">Contact</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Capturing Your Precious Moments</h2>
+            <!--<p>Experience photography like never before.</p>-->
+            <a href="view-more.html" class="cta-button">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About the Photographer</h2>
+        <p>With a passion for capturing the beauty of life's moments, Suraj brings a unique perspective to every shoot.</p>
+        <a href="about.html" class="cta-button">Learn More</a>
+    </section>
+
+    <!-- Services Section -->
+    <!-- Services Section -->
+<section id="services" style="text-align: center; padding: 60px 20px; background-color: #111;">
+    <h2>Our Services</h2>
+    <h5 style="display: inline-block; text-align: left; max-width: 1200px; margin: 0 auto;">
+        # Cinematography, 
+        # Wedding Photography,
+        # Pre-Wedding Photography, 
+        # Portrait Photography ,
+        # Event Coverage ,
+        # Landscape Photography, 
+        # Baby Shoot ,
+        # Maternity Shoot, 
+        # Portrait Shoot ,
+        # Fashion Shoot ,
+        # Product Shoot ,
+        # Swimwear/Lingerie Shoot, 
+        # Fitness Shoot ,
+        ...and more.
+    </h5>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <h5>NOTE: If you do not get a reply after filling the form, please contact us via the contact number.</h5>
+            <h5>[***Thank you***]</h5>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2024 Surajwadekar Films Photography. All Rights Reserved.</p>
+            <!--<div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>-->
+        </div>
+    </footer>
+</body>
+</html>
