@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View More - Capture the Moment</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff4c39;
+        }
+
+        /* Grid layout for photos */
+        #view-more {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 10px; /* Gap between grid items */
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer nav ul {
+            margin-top: 10px;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        footer nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SURAJWADEKAR_FILMS_PHOTOGRAPHY</h1>
+        <nav>
+            <ul>
+                <!--<li><a href="suraj_wadekar.php">Home</a></li>-->
+                <!-- Add other navigation items here -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="view-more">
+        <!--<h2>More Photos</h2>
+        <P><P> <li>Wedding Photography</li>
+            <li>Pre-Wedding Photography</li>
+            <li>Portrait Photography</li>
+            <li>Event Coverage</li>
+            <li>Landscape Photography</li>
+            <li>Baby Shoot</li></P>
+        Your additional photos grid goes here -->
+        <div class="portfolio-item">
+            <img src="images/photo.jpg" alt="Photo ">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo1.jpg" alt="Photo 1">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo2.jpg" alt="Photo 2">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo3.jpg" alt="Photo 3">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo4.jpg" alt="Photo 4">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo5.jpg" alt="Photo 5">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo6.jpg" alt="Photo 6">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo7.jpg" alt="Photo 7">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo8.jpg" alt="Photo 8">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo9.jpg" alt="Photo 9">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo10.jpg" alt="Photo 10">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo11.jpg" alt="Photo 11">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo12.jpg" alt="Photo 12">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo13.jpg" alt="Photo 13">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo14.jpg" alt="Photo 14">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo15.jpg" alt="Photo 15">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo16.jpg" alt="Photo 16">
+        </div>
+        <div class="portfolio-item">
+            <img src="images/photo17.jpg" alt="Photo 17">
+        </div>
+        <p><a href="index.html" class="cta-button" style="background-color: #ffc107;">Back to Home</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> SURAJWADEKAR_FILMS_PHOTOGRAPHY.</p>
+        <nav>
+            <ul>
+                <li><a href="#" style="color: #fff;">Terms of Service</a></li>
+                <li><a href="#" style="color: #fff;">Privacy Policy</a></li>
+                <li><a href="#" style="color: #fff;">Sitemap</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
